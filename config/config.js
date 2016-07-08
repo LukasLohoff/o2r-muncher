@@ -32,6 +32,7 @@ c.net.port         = env.MUNCHER_PORT || 8080;
 c.mongo.location   = env.MUNCHER_MONGODB || 'mongodb://localhost/';
 c.mongo.collection = env.MUNCHER_MONGODB_COLLECTION || 'muncher';
 c.mongo.creds      = {};
+c.net.proxy        = env.MUNCHER_PROXY || undefined;
 
 // fix mongo location if trailing slash was omitted
 if (c.mongo.location[c.mongo.location.length-1] !== '/') {
